@@ -13,7 +13,7 @@ jobs:
     - name : Install Packages 
       run : |
         pip install pytest
-        pip install pytorch torchvision torchaudio cpuonly -c pytorch
+        pip install torch torchvision torchaudio
       
     - name : Run tests 
       run : pytest regression_test.py
